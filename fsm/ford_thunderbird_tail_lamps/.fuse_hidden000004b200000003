@@ -79,3 +79,6 @@ dismissDialog("Open Project"); // bs:g (cg:JFrame)
 // TclEventType: DG_ANALYSIS_MSG_RESET
 // TclEventType: DG_GRAPH_GENERATED
 // Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 59 MB (+751kb) [00:12:13]
+// [GUI Memory]: 63 MB (+913kb) [00:15:48]
+// [GUI Memory]: 67 MB (+1327kb) [00:19:48]
