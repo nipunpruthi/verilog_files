@@ -1,0 +1,895 @@
+/*
+
+Vivado v2017.2 (64-bit)
+SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+
+Process ID: 8174
+License: Customer
+
+Current time: 	1/5/18 2:57:18 PM IST
+Time zone: 	India Standard Time (Asia/Kolkata)
+
+OS: NAME="Ubuntu"
+OS Version: 4.10.0-42-generic
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: :0
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 227 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	/opt/Xilinx/Vivado/2017.2/tps/lnx64/jre
+JVM executable location: 	/opt/Xilinx/Vivado/2017.2/tps/lnx64/jre/bin/java
+Java library paths: /opt/Xilinx/Vivado/2017.2/tps/lnx64/libxslt/lib:/opt/Xilinx/Vivado/2017.2/lib/lnx64.o:/opt/Xilinx/Vivado/2017.2/tps/lnx64/jre/lib/amd64:/opt/Xilinx/Vivado/2017.2/tps/lnx64/jre/lib/amd64/server:/opt/Xilinx/Vivado/2017.2/lnx64/tools/dot/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+
+User name: 	nipun
+User home directory: /home/nipun
+User working directory: /media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/sevensegmentdisplay
+User country: 	IN
+User language: 	en
+User locale: 	en_IN
+
+RDI_BASEROOT: /opt/Xilinx/Vivado
+HDI_APPROOT: /opt/Xilinx/Vivado/2017.2
+RDI_DATADIR: /opt/Xilinx/Vivado/2017.2/data
+RDI_BINDIR: /opt/Xilinx/Vivado/2017.2/bin
+
+User preferences location: /home/nipun/.Xilinx/Vivado
+Vivado preferences directory: /home/nipun/.Xilinx/Vivado/2017.2/vivado.xml
+Vivado layouts directory: /home/nipun/.Xilinx/Vivado/2017.2/layouts
+PlanAhead jar location: 	/opt/Xilinx/Vivado/2017.2/lib/classes/planAhead.jar
+Vivado Look & Feel: 	[Synthetica - the extended Synth Look and Feel. - ui.g.i.H]
+Engine tmp dir: 	./.Xil/Vivado-8174-nipun-HP-Pavilion-Notebook
+
+GUI allocated memory:	184 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 833 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// [GUI Memory]: 52 MB (+51941kb) [00:00:08]
+// [Engine Memory]: 833 MB (+722287kb) [00:00:08]
+// HMemoryUtils.trashcanNow. Engine heap size: 843 MB. GUI used memory: 28 MB. Current time: 1/5/18 2:57:20 PM IST
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/vivado projects/itsNeverLate/itsNeverLate.xpr", 0); // q:k (JPanel:JComponent, cg:JFrame)
+// bs:g (cg:JFrame):  Open Project : addNotify
+// Opening Vivado Project: /media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/vivado projects/itsNeverLate/itsNeverLate.xpr. Version: Vivado v2017.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// HMemoryUtils.trashcanNow. Engine heap size: 894 MB. GUI used memory: 27 MB. Current time: 1/5/18 2:59:20 PM IST
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 900 MB (+26597kb) [00:02:12]
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 55 MB (+67kb) [00:02:14]
+// Tcl Message: open_project {/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/vivado projects/itsNeverLate/itsNeverLate.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.2/data/ip'. 
+// Project name: itsNeverLate; location: /media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/vivado projects/itsNeverLate; part: xc7k70tfbv676-1
+// [Engine Memory]: 947 MB (+1389kb) [00:02:15]
+dismissDialog("Open Project"); // bs:g (cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 61 MB (+4303kb) [00:02:17]
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (ssd.v) elapsed time: 0.2s
+// [GUI Memory]: 66 MB (+1348kb) [00:02:20]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ssd (ssd.v)]", 1, false, false, false, false, true, false); // B:i (D:JPanel, cg:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// as:g (cg:JFrame): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, as:g)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Remove Sources"); // as:g (cg:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/sevensegmentdisplay/ssd.v}} 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c:g (cg:JFrame): Add Sources: addNotify
+// [GUI Memory]: 70 MB (+490kb) [00:02:25]
+// TclEventType: FILE_SET_CHANGE
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, c:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a:JButton (C:JPanel, c:g)
+// [Engine Memory]: 1,021 MB (+28498kb) [00:02:29]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,021 MB. GUI used memory: 36 MB. Current time: 1/5/18 2:59:40 PM IST
+setFileChooser("/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/decoder3_8/decoder3_8.v");
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, c:g)
+// 'h' command handler elapsed time: 13 seconds
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Add Sources"); // c:g (cg:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/decoder3_8/decoder3_8.v}} 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decoder3_8 (decoder3_8.v)]", 1, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decoder3_8 (decoder3_8.v)]", 1, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u:M (JViewport:JComponent, cg:JFrame) - Node
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 3); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// x:aN (cg:JFrame): Elaborate Design: addNotify
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g:JCheckBox (JPanel:JComponent, x:aN): FALSE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, x:aN)
+// bs:g (cg:JFrame):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // x:aN (cg:JFrame)
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7k70tfbv676-1 Top: decoder3_8 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a:JButton (JPanel:JComponent, bs:g)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,097 MB. GUI used memory: 37 MB. Current time: 1/5/18 3:00:05 PM IST
+// [Engine Memory]: 1,117 MB (+46336kb) [00:02:57]
+// TclEventType: ELABORATE_FINISH
+// [Engine Memory]: 1,261 MB (+92725kb) [00:03:02]
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,318 MB. GUI used memory: 37 MB. Current time: 1/5/18 3:00:11 PM IST
+// [Engine Memory]: 1,334 MB (+10843kb) [00:03:02]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 1,412 MB (+11717kb) [00:03:03]
+// Xgd.load filename: /opt/Xilinx/Vivado/2017.2/data/parts/xilinx/kintex7/devint/kintex7/xc7k70t/xc7k70t.xgd; ZipEntry: xc7k70t_detail.xgd elapsed time: 0.8s
+// [GUI Memory]: 73 MB (+79kb) [00:03:04]
+// Schematic: addNotify
+// [GUI Memory]: 80 MB (+3745kb) [00:03:06]
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 6139.727 ; gain = 26.000 ; free physical = 3997 ; free virtual = 14039 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'decoder3_8' [/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/decoder3_8/decoder3_8.v:3] INFO: [Synth 8-256] done synthesizing module 'decoder3_8' (1#1) [/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/decoder3_8/decoder3_8.v:3] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 6171.156 ; gain = 57.430 ; free physical = 3971 ; free virtual = 14017 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 6171.156 ; gain = 57.430 ; free physical = 3967 ; free virtual = 14013 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Device 21-403] Loading part xc7k70tfbv676-1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:14 . Memory (MB): peak = 6527.168 ; gain = 413.441 ; free physical = 3329 ; free virtual = 13435 
+// Tcl Message: 6 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:14 . Memory (MB): peak = 6527.168 ; gain = 413.441 ; free physical = 3329 ; free virtual = 13435 
+// Elapsed time: 13 seconds
+dismissDialog("Open Elaborated Design"); // bs:g (cg:JFrame)
+// [GUI Memory]: 86 MB (+1361kb) [00:03:30]
+// [GUI Memory]: 92 MB (+2162kb) [00:12:30]
+// PAPropertyPanels.initPanels (y_i (RTL_ROM)) elapsed time: 0.4s
+// [GUI Memory]: 98 MB (+1252kb) [00:15:19]
+// Elapsed time: 732 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "decoder3_8.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // G:M (Workspace:JPanel, cg:JFrame)
+// [GUI Memory]: 104 MB (+1046kb) [00:15:24]
+// Schematic: addNotify
+// PAPropertyPanels.initPanels (y) elapsed time: 0.3s
+// Elapsed time: 30 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // ax:DockableFrame
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decoder3_8 (decoder3_8.v)]", 1, false, false, false, false, true, false); // B:i (D:JPanel, cg:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// as:g (cg:JFrame): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, as:g)
+// TclEventType: DG_GRAPH_STALE
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // A:b
+dismissDialog("Remove Sources"); // as:g (cg:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/decoder3_8/decoder3_8.v}} 
+// [GUI Memory]: 112 MB (+2666kb) [00:15:56]
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, false); // B:i (D:JPanel, cg:JFrame)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c:g (cg:JFrame): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, c:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a:JButton (C:JPanel, c:g)
+setFileChooser("/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/sevensegmentdisplay/ssd.v");
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, c:g)
+// 'h' command handler elapsed time: 12 seconds
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Add Sources"); // c:g (cg:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/sevensegmentdisplay/ssd.v}} 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true, false, false, false, true, false); // u:M (JViewport:JComponent, cg:JFrame) - Popup Trigger - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,482 MB. GUI used memory: 66 MB. Current time: 1/5/18 3:13:30 PM IST
+selectMenuItem(PAResourceCommand.PACommandNames_RELOAD_RTL_DESIGN, "Reload Design"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RELOAD_RTL_DESIGN
+// bs:g (cg:JFrame):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a:JButton (JPanel:JComponent, bs:g)
+// [Engine Memory]: 1,504 MB (+21755kb) [00:16:23]
+// Tcl Message: refresh_design 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,504 MB. GUI used memory: 56 MB. Current time: 1/5/18 3:13:37 PM IST
+// Engine heap size: 1,504 MB. GUI used memory: 57 MB. Current time: 1/5/18 3:13:37 PM IST
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 6571.160 ; gain = 0.000 ; free physical = 2681 ; free virtual = 12910 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'ssd' [/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/sevensegmentdisplay/ssd.v:3] INFO: [Synth 8-256] done synthesizing module 'ssd' (1#1) [/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/sevensegmentdisplay/ssd.v:3] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 6571.160 ; gain = 0.000 ; free physical = 2705 ; free virtual = 12926 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 6571.160 ; gain = 0.000 ; free physical = 2706 ; free virtual = 12927 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,494 MB. GUI used memory: 40 MB. Current time: 1/5/18 3:13:38 PM IST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Xgd.load filename: /opt/Xilinx/Vivado/2017.2/data/parts/xilinx/kintex7/devint/kintex7/xc7k70t/xc7k70t.xgd; ZipEntry: xc7k70t_detail.xgd elapsed time: 0.9s
+// Schematic: addNotify
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 6585.168 ; gain = 14.008 ; free physical = 2688 ; free virtual = 12913 
+dismissDialog("Reloading"); // bs:g (cg:JFrame)
+// PAPropertyPanels.initPanels (segments_i (RTL_ROM)) elapsed time: 0.2s
+// Elapsed time: 54 seconds
+selectView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic", 234, 265, 570, 572, false, false, false, true, false); // f:R (k:TdiGroup, cg:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SchMenuAndMouse_EXPAND_CONE, "Expand Cone"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SHOW_CONNECTIVITY, "Show Connectivity"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SHOW_CONNECTIVITY
+selectView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic", 246, 258, 570, 572, false, false, false, true, false); // f:R (k:TdiGroup, cg:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SchMenuAndMouse_EXPAND_CONE, "Expand Cone"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_GOTO_INSTANTIATION, "Go to Source"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_INSTANTIATION
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 74 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ssd.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ssd (ssd.v)]", 1, false, false, false, false, true, false); // B:i (D:JPanel, cg:JFrame) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// as:g (cg:JFrame): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, as:g)
+// TclEventType: DG_GRAPH_STALE
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // A:b
+dismissDialog("Remove Sources"); // as:g (cg:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/sevensegmentdisplay/ssd.v}} 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B:JideButton (f:CommandBar, cg:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c:g (cg:JFrame): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, c:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a:JButton (C:JPanel, c:g)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,531 MB. GUI used memory: 67 MB. Current time: 1/5/18 3:16:25 PM IST
+setFileChooser("/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/decoder3_8/decoder3_8.v");
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, c:g)
+// 'h' command handler elapsed time: 9 seconds
+dismissDialog("Add Sources"); // c:g (cg:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/decoder3_8/decoder3_8.v}} 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true, false, false, false, true, false); // u:M (JViewport:JComponent, cg:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_RELOAD_RTL_DESIGN, "Reload Design"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RELOAD_RTL_DESIGN
+// bs:g (cg:JFrame):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a:JButton (JPanel:JComponent, bs:g)
+// Tcl Message: refresh_design 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 6624.188 ; gain = 0.000 ; free physical = 2631 ; free virtual = 12860 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,563 MB. GUI used memory: 43 MB. Current time: 1/5/18 3:16:47 PM IST
+// Engine heap size: 1,563 MB. GUI used memory: 44 MB. Current time: 1/5/18 3:16:47 PM IST
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'decoder3_8' [/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/decoder3_8/decoder3_8.v:3] INFO: [Synth 8-256] done synthesizing module 'decoder3_8' (1#1) [/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/decoder3_8/decoder3_8.v:3] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 6624.188 ; gain = 0.000 ; free physical = 2657 ; free virtual = 12877 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 6624.188 ; gain = 0.000 ; free physical = 2656 ; free virtual = 12877 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,549 MB. GUI used memory: 42 MB. Current time: 1/5/18 3:16:48 PM IST
+// Xgd.load filename: /opt/Xilinx/Vivado/2017.2/data/parts/xilinx/kintex7/devint/kintex7/xc7k70t/xc7k70t.xgd; ZipEntry: xc7k70t_detail.xgd elapsed time: 0.6s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 6633.191 ; gain = 9.004 ; free physical = 2644 ; free virtual = 12868 
+dismissDialog("Reloading"); // bs:g (cg:JFrame)
+// PAPropertyPanels.initPanels (y_i (RTL_ROM)) elapsed time: 0.2s
+// Elapsed time: 268 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decoder3_8 (decoder3_8.v)]", 1, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decoder3_8 (decoder3_8.v)]", 1, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 49 seconds
+selectCodeEditor("decoder3_8.v", 99, 68); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h:k (JPanel:JComponent, cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true, false, false, false, true, false); // u:M (JViewport:JComponent, cg:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_RELOAD_RTL_DESIGN, "Reload Design"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RELOAD_RTL_DESIGN
+// bs:g (cg:JFrame):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a:JButton (JPanel:JComponent, bs:g)
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 6633.191 ; gain = 0.000 ; free physical = 2540 ; free virtual = 12755 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,577 MB. GUI used memory: 43 MB. Current time: 1/5/18 3:22:22 PM IST
+// Engine heap size: 1,577 MB. GUI used memory: 44 MB. Current time: 1/5/18 3:22:22 PM IST
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'decoder3_8' [/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/decoder3_8/decoder3_8.v:3] INFO: [Synth 8-256] done synthesizing module 'decoder3_8' (1#1) [/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/decoder3_8/decoder3_8.v:3] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 6633.191 ; gain = 0.000 ; free physical = 2552 ; free virtual = 12767 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 6633.191 ; gain = 0.000 ; free physical = 2553 ; free virtual = 12769 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,574 MB. GUI used memory: 42 MB. Current time: 1/5/18 3:22:23 PM IST
+// [Engine Memory]: 1,579 MB (+261kb) [00:25:14]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 6661.203 ; gain = 28.012 ; free physical = 2460 ; free virtual = 12692 
+dismissDialog("Reloading"); // bs:g (cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// PAPropertyPanels.initPanels (y_i (RTL_ROM)) elapsed time: 0.2s
+selectView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic", 298, 260, 570, 572, false, false, false, true, false); // f:R (k:TdiGroup, cg:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SchMenuAndMouse_EXPAND_CONE, "Expand Cone"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_GOTO_INSTANTIATION, "Go to Source"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_INSTANTIATION
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 943 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decoder3_8 (decoder3_8.v)]", 1, false, false, false, false, true, false); // B:i (D:JPanel, cg:JFrame) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_REPLACE_FILE, "Replace File..."); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SRC_REPLACE_FILE
+setFileChooser("/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/decoder3_8/decoder3_8style.v");
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_files -from_files {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/decoder3_8/decoder3_8style.v}} -to_files {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/decoder3_8/decoder3_8.v}} -filesets [get_filesets *] 
+// Tcl Message: INFO: [filemgmt 20-762] Replacing file '/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/decoder3_8/decoder3_8.v' with file '/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/decoder3_8/decoder3_8style.v'. 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true, false, false, false, true, false); // u:M (JViewport:JComponent, cg:JFrame) - Popup Trigger - Node
+// Elapsed time: 18 seconds
+selectMenuItem(PAResourceCommand.PACommandNames_RELOAD_RTL_DESIGN, "Reload Design"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RELOAD_RTL_DESIGN
+// bs:g (cg:JFrame):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// TclEventType: ELABORATE_FAIL
+// Tcl Message: ERROR: [Synth 8-2715] syntax error near & [/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/decoder3_8/decoder3_8style.v:9] ERROR: [Synth 8-2798] unexpected EOF [/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/decoder3_8/decoder3_8style.v:13] 
+// Tcl Message: Failed to read verilog '/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/decoder3_8/decoder3_8style.v' ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors. 
+// 'e' command handler elapsed time: 4 seconds
+// M:a (cg:JFrame): Critical Messages: addNotify
+dismissDialog("Reloading"); // bs:g (cg:JFrame)
+// [GUI Memory]: 121 MB (+3612kb) [00:42:08]
+// Elapsed time: 15 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, M:a)
+dismissDialog("Critical Messages"); // M:a (cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decoder3_8 (decoder3_8style.v)]", 2, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decoder3_8 (decoder3_8style.v)]", 2, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decoder3_8 (decoder3_8style.v)]", 2, false); // B:i (D:JPanel, cg:JFrame)
+selectCodeEditor("decoder3_8style.v", 378, 366); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h:k (JPanel:JComponent, cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true, false, false, false, true, false); // u:M (JViewport:JComponent, cg:JFrame) - Popup Trigger - Node
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,639 MB. GUI used memory: 68 MB. Current time: 1/5/18 3:40:15 PM IST
+// Elapsed time: 27 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decoder3_8 (decoder3_8style.v)]", 1, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decoder3_8 (decoder3_8style.v)]", 1, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h:k (JPanel:JComponent, cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true, false, false, false, true, false); // u:M (JViewport:JComponent, cg:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_RELOAD_RTL_DESIGN, "Reload Design"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RELOAD_RTL_DESIGN
+// bs:g (cg:JFrame):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a:JButton (JPanel:JComponent, bs:g)
+// Tcl Message: refresh_design 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 6693.223 ; gain = 0.000 ; free physical = 2074 ; free virtual = 12346 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,640 MB. GUI used memory: 65 MB. Current time: 1/5/18 3:40:28 PM IST
+// Engine heap size: 1,640 MB. GUI used memory: 66 MB. Current time: 1/5/18 3:40:28 PM IST
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'decoder3_8' [/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/decoder3_8/decoder3_8style.v:3] INFO: [Synth 8-256] done synthesizing module 'decoder3_8' (1#1) [/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/decoder3_8/decoder3_8style.v:3] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 6693.223 ; gain = 0.000 ; free physical = 2087 ; free virtual = 12360 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 6693.223 ; gain = 0.000 ; free physical = 2088 ; free virtual = 12362 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,677 MB. GUI used memory: 43 MB. Current time: 1/5/18 3:40:29 PM IST
+// [Engine Memory]: 1,677 MB (+19763kb) [00:43:20]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 6759.234 ; gain = 66.012 ; free physical = 2088 ; free virtual = 12355 
+dismissDialog("Reloading"); // bs:g (cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "decoder3_8.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// PAPropertyPanels.initPanels (y[0]) elapsed time: 0.2s
+// Elapsed time: 48 seconds
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[decoder3_8, Nets (16), a]", 2); // aW:bi (JViewport:JComponent, cg:JFrame)
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[decoder3_8, Nets (16), y, y[0]]", 7, false); // aW:bi (JViewport:JComponent, cg:JFrame)
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[decoder3_8, Nets (16), y, y[0]]", 7, false, false, false, false, false, true); // aW:bi (JViewport:JComponent, cg:JFrame) - Double Click
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[decoder3_8, Nets (16), y, y[0]]", 7, false); // aW:bi (JViewport:JComponent, cg:JFrame)
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[decoder3_8, Nets (16), y, y[0]]", 7, false, false, false, false, false, true); // aW:bi (JViewport:JComponent, cg:JFrame) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,703 MB. GUI used memory: 67 MB. Current time: 1/5/18 4:10:30 PM IST
+// Elapsed time: 2123 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decoder3_8 (decoder3_8style.v)]", 1, false, false, false, false, true, false); // B:i (D:JPanel, cg:JFrame) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_DISABLE, "Disable File"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SRC_DISABLE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property is_enabled false [get_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/decoder3_8/decoder3_8style.v}}] 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B:JideButton (f:CommandBar, cg:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c:g (cg:JFrame): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, c:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a:JButton (C:JPanel, c:g)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,732 MB. GUI used memory: 68 MB. Current time: 1/5/18 4:17:05 PM IST
+setFileChooser("/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/priority_encoder/pri_encoder.v");
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, c:g)
+// 'h' command handler elapsed time: 10 seconds
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Add Sources"); // c:g (cg:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/priority_encoder/pri_encoder.v}} 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true, false, false, false, true, false); // u:M (JViewport:JComponent, cg:JFrame) - Popup Trigger - Node
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [Engine Memory]: 1,764 MB (+3563kb) [01:21:14]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,764 MB. GUI used memory: 69 MB. Current time: 1/5/18 4:18:25 PM IST
+// Elapsed time: 73 seconds
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // G:M (Workspace:JPanel, cg:JFrame)
+// Elapsed time: 55 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // ax:DockableFrame
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, priority_encoder (pri_encoder.v)]", 1, false, false, false, false, true, false); // B:i (D:JPanel, cg:JFrame) - Popup Trigger
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true, false, false, false, true, false); // u:M (JViewport:JComponent, cg:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_RELOAD_RTL_DESIGN, "Reload Design"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RELOAD_RTL_DESIGN
+// bs:g (cg:JFrame):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a:JButton (JPanel:JComponent, bs:g)
+// TclEventType: ELABORATE_FAIL
+// Tcl Message: INFO: [Synth 8-2350] module priority_encoder ignored due to previous errors [/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/priority_encoder/pri_encoder.v:3] 
+// Tcl Message: Failed to read verilog '/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/priority_encoder/pri_encoder.v' ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors. 
+// M:a (cg:JFrame): Critical Messages: addNotify
+dismissDialog("Reloading"); // bs:g (cg:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, M:a)
+dismissDialog("Critical Messages"); // M:a (cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "decoder3_8style.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, priority_encoder (pri_encoder.v)]", 1, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, priority_encoder (pri_encoder.v)]", 1, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+selectCodeEditor("pri_encoder.v", 135, 53); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 20 seconds
+selectCodeEditor("pri_encoder.v", 112, 43); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("pri_encoder.v", 124, 127); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("pri_encoder.v", 116, 169); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, priority_encoder (pri_encoder.v)]", 1, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, priority_encoder (pri_encoder.v)]", 1, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, priority_encoder (pri_encoder.v)]", 1, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, priority_encoder (pri_encoder.v)]", 1, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,798 MB. GUI used memory: 71 MB. Current time: 1/5/18 4:20:15 PM IST
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true, false, false, false, true, false); // u:M (JViewport:JComponent, cg:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_RELOAD_RTL_DESIGN, "Reload Design"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RELOAD_RTL_DESIGN
+// bs:g (cg:JFrame):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 6846.289 ; gain = 0.000 ; free physical = 1872 ; free virtual = 12150 
+// Tcl Message: --------------------------------------------------------------------------------- 
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, bs:g)
+// TclEventType: ELABORATE_FAIL
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. INFO: [Common 17-344] 'source' was cancelled INFO: [Common 17-344] 'refresh_design' was cancelled 
+// 'e' command handler elapsed time: 4 seconds
+dismissDialog("Reloading"); // bs:g (cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true, false, false, false, true, false); // u:M (JViewport:JComponent, cg:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_RELOAD_RTL_DESIGN, "Reload Design"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RELOAD_RTL_DESIGN
+// bs:g (cg:JFrame):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a:JButton (JPanel:JComponent, bs:g)
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 6854.285 ; gain = 0.000 ; free physical = 1846 ; free virtual = 12126 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+// Engine heap size: 1,806 MB. GUI used memory: 45 MB. Current time: 1/5/18 4:20:32 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 44 MB. Current time: 1/5/18 4:20:32 PM IST
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'priority_encoder' [/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/priority_encoder/pri_encoder.v:3] INFO: [Synth 8-256] done synthesizing module 'priority_encoder' (1#1) [/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/priority_encoder/pri_encoder.v:3] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 6854.285 ; gain = 0.000 ; free physical = 1828 ; free virtual = 12117 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 6854.285 ; gain = 0.000 ; free physical = 1827 ; free virtual = 12117 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,783 MB. GUI used memory: 43 MB. Current time: 1/5/18 4:20:33 PM IST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 6862.285 ; gain = 8.000 ; free physical = 1791 ; free virtual = 12099 
+dismissDialog("Reloading"); // bs:g (cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "decoder3_8style.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // A:b
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // A:b
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // G:M (Workspace:JPanel, cg:JFrame)
+// PAPropertyPanels.initPanels (a[1]) elapsed time: 0.2s
+// Schematic: addNotify
+// PAPropertyPanels.initPanels (I0) elapsed time: 0.2s
+// Elapsed time: 399 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pri_encoder.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 18 seconds
+selectButton(PAResourceCommand.PACommandNames_ZOOM_FIT, "Schematic_zoom_fit"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_FIT
+// Elapsed time: 59 seconds
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Elapsed time: 147 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// bs:g (cg:JFrame):  IP Catalog : addNotify
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// bs:g (cg:JFrame):  IP Catalog : addNotify
+dismissDialog("IP Catalog"); // bs:g (cg:JFrame)
+dismissDialog("IP Catalog"); // bs:g (cg:JFrame)
+closeView(PAResourceOtoP.PAViews_IP_CATALOG, "IP Catalog"); // ad:aJ
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f:R
+// Elapsed time: 704 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // ax:DockableFrame
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, priority_encoder (pri_encoder.v)]", 1, false, false, false, false, true, false); // B:i (D:JPanel, cg:JFrame) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_DISABLE, "Disable File"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SRC_DISABLE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property is_enabled false [get_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/priority_encoder/pri_encoder.v}}] 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c:g (cg:JFrame): Add Sources: addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, c:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a:JButton (C:JPanel, c:g)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,824 MB. GUI used memory: 73 MB. Current time: 1/5/18 4:43:36 PM IST
+setFileChooser("/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/priority_encoder/pri_encoder_casez.v");
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, c:g)
+// 'h' command handler elapsed time: 8 seconds
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Add Sources"); // c:g (cg:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/priority_encoder/pri_encoder_casez.v}} 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B:i (D:JPanel, cg:JFrame) - Node
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 1,856 MB (+4280kb) [01:46:35]
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true, false, false, false, true, false); // u:M (JViewport:JComponent, cg:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_RELOAD_RTL_DESIGN, "Reload Design"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RELOAD_RTL_DESIGN
+// bs:g (cg:JFrame):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,851 MB. GUI used memory: 69 MB. Current time: 1/5/18 4:43:56 PM IST
+// Engine heap size: 1,851 MB. GUI used memory: 71 MB. Current time: 1/5/18 4:43:56 PM IST
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 6902.305 ; gain = 0.000 ; free physical = 1610 ; free virtual = 11974 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'pri_using_casez' [/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/priority_encoder/pri_encoder_casez.v:3] INFO: [Synth 8-256] done synthesizing module 'pri_using_casez' (1#1) [/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/priority_encoder/pri_encoder_casez.v:3] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 6902.305 ; gain = 0.000 ; free physical = 1622 ; free virtual = 11987 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 6902.305 ; gain = 0.000 ; free physical = 1624 ; free virtual = 11990 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,846 MB. GUI used memory: 45 MB. Current time: 1/5/18 4:43:58 PM IST
+// Xgd.load filename: /opt/Xilinx/Vivado/2017.2/data/parts/xilinx/kintex7/devint/kintex7/xc7k70t/xc7k70t.xgd; ZipEntry: xc7k70t_detail.xgd elapsed time: 0.6s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 6916.312 ; gain = 14.008 ; free physical = 1612 ; free virtual = 11992 
+// 'e' command handler elapsed time: 7 seconds
+dismissDialog("Reloading"); // bs:g (cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pri_encoder.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true, false, false, false, true, false); // u:M (JViewport:JComponent, cg:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_IN_NEW_WINDOW_RTL, "Open RTL in New Window"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_IN_NEW_WINDOW_RTL
+// Schematic: addNotify
+// Schematic: addNotify
+// PAPropertyPanels.initPanels (a) elapsed time: 0.2s
+// Elapsed time: 22 seconds
+closeMainWindow("itsNeverLate - [/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/vivado projects/itsNeverLate/itsNeverLate.xpr] - Vivado 2017.2"); // cg:JFrame
+// HMemoryUtils.trashcanNow. Engine heap size: 1,854 MB. GUI used memory: 81 MB. Current time: 1/5/18 4:44:32 PM IST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pri_using_casez (pri_encoder_casez.v)]", 1, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pri_using_casez (pri_encoder_casez.v)]", 1, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // A:b
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true, false, false, false, true, false); // u:M (JViewport:JComponent, cg:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_RELOAD_RTL_DESIGN, "Reload Design"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RELOAD_RTL_DESIGN
+// bs:g (cg:JFrame):  Reloading : addNotify
+selectButton("PAResourceQtoS.ReloadDesign_DESIGN_UP_TO_DATE_RELOAD_ANYWAY_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,854 MB. GUI used memory: 73 MB. Current time: 1/5/18 4:44:49 PM IST
+// Engine heap size: 1,854 MB. GUI used memory: 74 MB. Current time: 1/5/18 4:44:49 PM IST
+// Tcl Message: refresh_design 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,843 MB. GUI used memory: 50 MB. Current time: 1/5/18 4:44:50 PM IST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Xgd.load filename: /opt/Xilinx/Vivado/2017.2/data/parts/xilinx/kintex7/devint/kintex7/xc7k70t/xc7k70t.xgd; ZipEntry: xc7k70t_detail.xgd elapsed time: 0.6s
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a:JButton (JPanel:JComponent, bs:g)
+// 'e' command handler elapsed time: 4 seconds
+dismissDialog("Reloading"); // bs:g (cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pri_encoder_casez.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true, false, false, false, true, false); // u:M (JViewport:JComponent, cg:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_RTL_DESIGN, "New Elaborated Design..."); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_RTL_DESIGN
+// G:p (cg:JFrame): Open Elaborated Design: addNotify
+applyEnter(PAResourceOtoP.OpenDesignDialog_DESIGN_NAME, "rtl_2"); // X:JTextField (JPanel:JComponent, G:p)
+// bs:g (cg:JFrame):  Open Elaborated Design : addNotify
+selectButton("PAResourceOtoP.OpenDesignDialog_DESIGN_ALREADY_OPEN_OPEN_NEW_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, H:JDialog)
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_2 
+// Tcl Message: Command: synth_design -rtl -name rtl_2 Starting synth_design Using part: xc7k70tfbv676-1 Top: pri_using_casez 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,881 MB. GUI used memory: 73 MB. Current time: 1/5/18 4:45:13 PM IST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 6916.312 ; gain = 0.000 ; free physical = 1559 ; free virtual = 11941 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'pri_using_casez' [/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/priority_encoder/pri_encoder_casez.v:3] INFO: [Synth 8-256] done synthesizing module 'pri_using_casez' (1#1) [/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/priority_encoder/pri_encoder_casez.v:3] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 6916.312 ; gain = 0.000 ; free physical = 1570 ; free virtual = 11952 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 6916.312 ; gain = 0.000 ; free physical = 1569 ; free virtual = 11952 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 6977.703 ; gain = 61.391 ; free physical = 1490 ; free virtual = 11853 
+// Tcl Message: 5 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 6977.703 ; gain = 61.391 ; free physical = 1490 ; free virtual = 11853 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:p)
+// 'c' command handler elapsed time: 13 seconds
+dismissDialog("Open Elaborated Design"); // bs:g (cg:JFrame)
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aF:FrameContainer (ContainerContainer:JideSplitPane, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pri_using_casez (pri_encoder_casez.v)]", 1, false, false, false, false, true, false); // B:i (D:JPanel, cg:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// as:g (cg:JFrame): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, as:g)
+// TclEventType: DG_GRAPH_STALE
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // A:b
+dismissDialog("Remove Sources"); // as:g (cg:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/priority_encoder/pri_encoder_casez.v}} 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources]", 2, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources]", 2, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, decoder3_8style.v]", 2, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, decoder3_8style.v]", 2, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, pri_encoder.v]", 3, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, pri_encoder.v]", 3, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, pri_encoder.v]", 3, false, false, false, false, true, false); // B:i (D:JPanel, cg:JFrame) - Popup Trigger
+// [Engine Memory]: 1,950 MB (+775kb) [01:48:43]
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_ENABLE, "Enable File"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SRC_ENABLE
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property is_enabled true [get_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/priority_encoder/pri_encoder.v}}] 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 127 MB (+91kb) [01:48:45]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B:i (D:JPanel, cg:JFrame) - Node
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,971 MB. GUI used memory: 80 MB. Current time: 1/5/18 4:45:55 PM IST
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u:M (JViewport:JComponent, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true, false, false, false, false, true); // u:M (JViewport:JComponent, cg:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true, false, false, false, true, false); // u:M (JViewport:JComponent, cg:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_RELOAD_RTL_DESIGN, "Reload Design"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RELOAD_RTL_DESIGN
+// bs:g (cg:JFrame):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a:JButton (JPanel:JComponent, bs:g)
+selectTab(PAResourceOtoP.PlanAheadTab_TABBED_PANE, (HResource) null, "rtl_2", 1); // I:i (JPanel:JComponent, cg:JFrame)
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 7028.844 ; gain = 0.000 ; free physical = 1417 ; free virtual = 11808 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+/*
+#-------------------------------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Current time: 1/5/18 4:46:20 PM IST
+# Process ID: 8174
+# OS: Linux
+# User: nipun
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx
+# Technical Support with this file and a testcase attached.
+#-------------------------------------------------------------------------------
+ui.g.e: Error: Wrapper with null DB pointer (See /media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/sevensegmentdisplay/vivado_pid8174.debug)
+*/

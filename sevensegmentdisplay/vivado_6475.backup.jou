@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Fri Jan  5 13:45:07 2018
+# Process ID: 6475
+# Current directory: /media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/sevensegmentdisplay
+# Command line: vivado
+# Log file: /media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/sevensegmentdisplay/vivado.log
+# Journal file: /media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/sevensegmentdisplay/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/vivado projects/itsNeverLate/itsNeverLate.xpr}
+update_compile_order -fileset sources_1
+remove_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/combitional in always/full adder/fulladderStyle2.v}}
+remove_files  -fileset sim_1 {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/combitional in always/full adder/testbench.v}}
+add_files -norecurse {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/sevensegmentdisplay/ssd.v}}
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1

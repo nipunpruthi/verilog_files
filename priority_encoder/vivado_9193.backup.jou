@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sat Jan  6 14:49:27 2018
+# Process ID: 9193
+# Current directory: /media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/priority_encoder
+# Command line: vivado
+# Log file: /media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/priority_encoder/vivado.log
+# Journal file: /media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/priority_encoder/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/vivado projects/itsNeverLate/itsNeverLate.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source testbench.tcl
+open_run synth_1 -name synth_1
+synth_design -rtl -name rtl_1
+update_compile_order -fileset sim_1
+remove_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/fsm/mod3counter.v}}
+add_files -norecurse {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/fsm/snail_pattern_1101/moore.v}}
+update_files -from_files {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/fsm/snail_pattern_1101/moore.v}} -to_files {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/fsm/snail_pattern_1101/moore.v}} -filesets [get_filesets *]
+set_property is_enabled false [get_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/fsm/snail_pattern_1101/moore.v}}]
+set_property is_enabled true [get_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/fsm/snail_pattern_1101/moore.v}}]
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+set_property is_enabled false [get_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/fsm/snail_pattern_1101/moore.v}}]
+add_files -norecurse {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/fsm/snail_pattern_1101/mealy.v}}
+refresh_design
+refresh_design
+set_property is_enabled false [get_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/fsm/snail_pattern_1101/mealy.v}}]
+add_files -norecurse {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/decoder_parameterized/decoder.v}}
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+remove_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/decoder_parameterized/decoder.v}}
+close_sim

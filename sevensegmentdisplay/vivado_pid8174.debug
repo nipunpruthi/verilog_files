@@ -1,0 +1,73 @@
+#-------------------------------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Current time: 1/5/18 4:46:20 PM IST
+# Process ID: 8174
+# User: nipun
+# OS: Linux
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx
+# Technical Support with this file and a testcase attached.
+#-------------------------------------------------------------------------------
+1/5/18 4:46:20 PM IST
+ui.g.e: Error: Wrapper with null DB pointer
+	at ui.g.h.Jx(SourceFile:698)
+	at ui.g.q.Jx(SourceFile:1591)
+	at ui.data.common.K.<init>(SourceFile:34)
+	at ui.data.design.B.<init>(SourceFile:109)
+	at ui.project.f.mf(SourceFile:41)
+	at ui.project.a.edV(SourceFile:500)
+	at ui.project.a.mG(SourceFile:467)
+	at ui.views.O.K.convert(SourceFile:1076)
+	at com.jidesoft.swing.JideTabbedPane.getDisplayTitleAt(Unknown Source)
+	at com.jidesoft.plaf.basic.BasicJideTabbedPaneUI.getCurrentDisplayTitleAt(Unknown Source)
+	at com.jidesoft.plaf.basic.BasicJideTabbedPaneUI.calculateTabWidth(Unknown Source)
+	at com.jidesoft.plaf.basic.BasicJideTabbedPaneUI$TabbedPaneScrollLayout.calculateTabRects(Unknown Source)
+	at com.jidesoft.plaf.basic.BasicJideTabbedPaneUI$TabbedPaneLayout.calculateLayoutInfo(Unknown Source)
+	at com.jidesoft.plaf.basic.BasicJideTabbedPaneUI.ensureCurrentLayout(Unknown Source)
+	at com.jidesoft.plaf.basic.BasicJideTabbedPaneUI.ensureActiveTabIsVisible(Unknown Source)
+	at com.jidesoft.swing.JideTabbedPane.scrollSelectedTabToVisible(Unknown Source)
+	at ui.views.O.az.update(SourceFile:687)
+	at ui.views.O.s.gbE(SourceFile:2417)
+	at ui.bf.S(SourceFile:1900)
+	at ui.bf.cn(SourceFile:1847)
+	at ui.bf.R(SourceFile:1828)
+	at ui.g.q.alO(SourceFile:175)
+	at ui.views.d.b.eXA(SourceFile:941)
+	at ui.views.d.b.eQB(SourceFile:198)
+	at ui.views.R.a.J(SourceFile:1302)
+	at ui.views.R.D.documentComponentDeactivated(SourceFile:2143)
+	at com.jidesoft.document.DocumentComponent.a(Unknown Source)
+	at com.jidesoft.document.DocumentPane.b(Unknown Source)
+	at com.jidesoft.document.DocumentPane.setActiveDocument(Unknown Source)
+	at com.jidesoft.document.DocumentPane.a(Unknown Source)
+	at com.jidesoft.document.DocumentPane.a(Unknown Source)
+	at com.jidesoft.document.DocumentPane.a(Unknown Source)
+	at com.jidesoft.document.DocumentPane.a(Unknown Source)
+	at com.jidesoft.document.DocumentPane.closeDocument(Unknown Source)
+	at ui.views.R.M.dn(SourceFile:1375)
+	at ui.views.Q.r(SourceFile:1014)
+	at ui.views.O.s.ah(SourceFile:899)
+	at ui.views.O.s.s(SourceFile:835)
+	at ui.views.O.P.a(SourceFile:273)
+	at ui.frmwork.a.k.d(SourceFile:41)
+	at ui.frmwork.HTclEventBroker.i(SourceFile:259)
+	at ui.frmwork.HTclEventBroker.cN(SourceFile:340)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:301)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:726)
+	at ui.frmwork.a.d.dispatchEvent(SourceFile:75)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+

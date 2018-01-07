@@ -1,0 +1,125 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sat Jan  6 19:18:24 2018
+# Process ID: 18741
+# Current directory: /media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/priority_encoder
+# Command line: vivado
+# Log file: /media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/priority_encoder/vivado.log
+# Journal file: /media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/priority_encoder/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/vivado projects/itsNeverLate/itsNeverLate.xpr}
+update_compile_order -fileset sources_1
+remove_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/generate_hardware/genrate_parameter_NinputAnd.v}}
+update_files -from_files {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/priority_encoder/pri_encoder_casez.v}} -to_files {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/fsm/mod3counter_testbench.v}} -filesets [get_filesets *]
+update_compile_order -fileset sim_1
+remove_files  -fileset sim_1 {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/priority_encoder/pri_encoder_casez.v}}
+add_files -norecurse {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/muxs with paramatirization/tristateBuffer.v} {/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/muxs with paramatirization/mux4.v} {/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/muxs with paramatirization/mux2Tristate.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/muxs with paramatirization/testbench.v}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+set_property is_enabled false [get_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/muxs with paramatirization/mux4.v}}]
+set_property is_enabled false [get_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/muxs with paramatirization/mux2Tristate.v}}]
+set_property is_enabled false [get_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/muxs with paramatirization/testbench.v}}]
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/muxs with paramatirization/testbench_tristate.v}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+refresh_design
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+remove_files  -fileset sim_1 {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/muxs with paramatirization/testbench_tristate.v}}
+set_property is_enabled false [get_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/muxs with paramatirization/tristateBuffer.v}}]
+set_property is_enabled true [get_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/muxs with paramatirization/mux2Tristate.v}}]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property is_enabled true [get_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/muxs with paramatirization/tristateBuffer.v}}]
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/muxs with paramatirization/testbench_mux2_tristate.v}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/muxs with paramatirization/testbench_tristate.v}}
+update_compile_order -fileset sim_1
+set_property is_enabled false [get_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/muxs with paramatirization/testbench_tristate.v}}]
+update_compile_order -fileset sim_1
+set_property is_enabled false [get_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/muxs with paramatirization/testbench_mux2_tristate.v}}]
+set_property is_enabled true [get_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/muxs with paramatirization/testbench_mux2_tristate.v}}]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+source testbench.tcl
+refresh_design
+set_property is_enabled true [get_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/muxs with paramatirization/mux4.v}}]
+update_compile_order -fileset sources_1
+set_property is_enabled false [get_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/muxs with paramatirization/testbench_mux2_tristate.v}}]
+set_property is_enabled true [get_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/muxs with paramatirization/testbench.v}}]
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source testbench.tcl
+refresh_design
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+remove_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/muxs with paramatirization/mux4.v}}
+remove_files  -fileset sim_1 {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/muxs with paramatirization/testbench_mux2_tristate.v}}
+remove_files  -fileset sim_1 {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/muxs with paramatirization/testbench_tristate.v}}
+remove_files  -fileset sim_1 {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/muxs with paramatirization/testbench.v}}
+remove_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/muxs with paramatirization/mux2Tristate.v}}
+remove_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/muxs with paramatirization/tristateBuffer.v}}
+add_files -norecurse {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/combitional in always/full adder/fulladderStyle2.v}}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/combitional in always/full adder/advanced_testBench.v}}
+update_compile_order -fileset sim_1
+refresh_design
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+pwd
+cd ../combitional in always/
+ls
+cd
+pws
+pwd
+cd /home
+cd /media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/combitional in always/full adder
+cd ?/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/combitional in always/full adder?
+close_sim

@@ -1,0 +1,64 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Thu Jan  4 19:29:43 2018
+# Process ID: 18920
+# Current directory: /media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/regester
+# Command line: vivado
+# Log file: /media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/regester/vivado.log
+# Journal file: /media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/regester/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/vivado projects/itsNeverLate/itsNeverLate.xpr}
+update_compile_order -fileset sources_1
+remove_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/mux/mux4.v}}
+remove_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/mux/mux2Tristate.v}}
+remove_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/mux/tristateBuffer.v}}
+add_files -norecurse {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/regester/reg.v}}
+synth_design -rtl -name rtl_1
+refresh_design
+remove_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/regester/reg.v}}
+add_files -norecurse {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/register/regSyncReset.v}}
+refresh_design
+refresh_design
+remove_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/register/regSyncReset.v}}
+add_files -norecurse {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/register/regAsyncReset.v}}
+refresh_design
+refresh_design
+set_property is_enabled false [get_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/register/regAsyncReset.v}}]
+add_files -norecurse {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/register/regSyncReset.v}}
+refresh_design
+remove_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/register/regSyncReset.v}}
+remove_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/register/regAsyncReset.v}}
+add_files -norecurse {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/register/synchronizer.v}}
+refresh_design
+remove_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/register/synchronizer.v}}
+add_files -norecurse {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/latch/dlatch.v}}
+refresh_design
+update_files -from_files {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/inverter in always/inverter.v}} -to_files {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/latch/dlatch.v}} -filesets [get_filesets *]
+refresh_design
+update_files -from_files {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/combitional in always/full adder/fulladder.v}} -to_files {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/inverter in always/inverter.v}} -filesets [get_filesets *]
+refresh_design
+refresh_design
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/combitional in always/full adder/testbench.v}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+source testbench.tcl
+refresh_design
+update_files -from_files {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/combitional in always/full adder/fulladderStyle2.v}} -to_files {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/combitional in always/full adder/fulladder.v}} -filesets [get_filesets *]
+close_sim
+refresh_design
+launch_simulation
+source testbench.tcl
+close_sim
+launch_simulation
+source testbench.tcl
+refresh_design
+close_sim
+launch_simulation
+source testbench.tcl
+close_sim

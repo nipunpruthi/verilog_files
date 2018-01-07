@@ -1,0 +1,10 @@
+`timescale 1ns/1ps
+
+//module designed for Traffic Lights designed by Nipun Pruthi
+
+module mode(P, R, M);
+   input P, R;
+   output M;
+
+   wire   P, R, M;//by default all are wire
+   

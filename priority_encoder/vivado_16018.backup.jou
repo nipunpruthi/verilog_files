@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sat Jan  6 17:33:12 2018
+# Process ID: 16018
+# Current directory: /media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/priority_encoder
+# Command line: vivado
+# Log file: /media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/priority_encoder/vivado.log
+# Journal file: /media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/priority_encoder/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/vivado projects/itsNeverLate/itsNeverLate.xpr}
+update_compile_order -fileset sources_1
+remove_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/fsm/snail_pattern_1101/mealy.v}}
+remove_files  {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/fsm/snail_pattern_1101/moore.v}}
+add_files -norecurse {{/media/nipun/789CB1599CB1131C/Nipun Pruthi/Study/IITR/vivado/files/understanding/generate_hardware/genrate_parameter_NinputAnd.v}}
+synth_design -rtl -name rtl_1
+refresh_design
